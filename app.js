@@ -8,7 +8,7 @@
   buttons.forEach(function (button) {
     button.addEventListener('click', function (e) {
       let value = e.target.dataset.num;
-      screen.value += value;
+      if (!e.target.classList.value.includes("btn-equal")) screen.value += value;
     })
   });
 
